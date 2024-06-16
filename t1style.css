@@ -1,0 +1,46 @@
+table {
+    width: 100%;
+    background-color:#B2DFDB;
+}
+table,td, th {
+    border: 1px solid black; 
+    border-radius: 10px;
+}
+
+.shapes-grid {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 20px;
+}
+
+.shape {
+    border: 2px solid #8BC34A; 
+    width: 100px;
+    height: 60px;
+}
+
+.rectangle {
+    border-radius: 5px; 
+}
+.rounded-rectangle {
+    border-radius: 20px;
+}
+
+#rounded-rectangle-1 {
+    border-radius: 20px; 
+}
+#rounded-rectangle-2{
+    border-radius: 20px;
+}
+#rounded-rectangle-3{
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.oval {
+    border-radius: 50px / 30px; 
+}

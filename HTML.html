@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Task</title>
+</head>
+<body>
+
+<h2>TASK 1</h2>
+<table border="1" style="background-color: #ADD8E6; width: 70%;">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+</table>
+
+<br><br>
+
+<h2>TASK 2</h2>
+
+<div style="border: 1px solid black; padding: 5px; width: fit-content;">
+    <p>List can be nested (list inside list):</p>
+    <ul style="list-style-type: disc;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <ul style="list-style-type: circle;">
+            <li>Black tea</li>
+            <li>Green tea</li>
+        </ul>
+        <li>Milk</li>
+    </ul>
+</div>
+
+<br><br>
+
+<h2>TASK 3</h2>
+
+<div 
+  style="border: solid black; padding: 10px; width: fit-content; background-color: rgba(169, 169, 169, 0.183);">
+    <p>Click any of the following links</p>
+    <a href="https://www.google.com" target="_blank">Opens in New</a> | 
+    <a href="https://www.google.com" target="_self">Opens in Self</a> | 
+    <a href="https://www.google.com" target="_parent">Opens in Parent</a> | 
+    <a href="https://www.google.com" target="_top">Opens in Body</a> | 
+    <a href="mailto:pallavi@gmail.com">Send email</a>
+</div>
+
+<br><br>
+
+<h2>TASK 4</h2>
+<form action="" >
+  <p>Full Name: <input type="text" value="Vincent Maverick Durano" style="margin-left: 40px;"></p>
+  <p>Username: <input type="text" value="Vinz" style="margin-left: 43px;"></p>
+  <p>Password: <input type="password" id="password" name="password" value="password" style="margin-left: 45px;"></p>
+  <p>Re Password: <input type="password" id="rePassword" name="rePassword" value="password" style="margin-left: 24px;"></p>
+  <p>Address: <input type="text" value="Cebu, Philippines" style="margin-left: 54px;"></p>
+  <p>Age: <input type="number" value="22" style="margin-left: 80px;"></p>
+  <p>Gender: 
+      <select style="margin-left: 60px;">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
+      </select>
+  </p>
+  <p><input type="submit" value="Save"></p>
+</form>
+
+
+<br><br>
+
+<h2>TASK 5</h2>
+
+<h1 style="text-align: center; color: blue;">Registration form</h1>
+<div style=" width: fit-content; margin: auto;">
+    <form action="">
+        <table style="width: 100%; border-collapse: collapse;" border="1">
+            <tr>
+                <th align="center">First Name:</th>
+                <td><input type="text" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <th align="center">Last Name:</th>
+                <td ><input type="text" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <th align="center">Email:</th>
+                <td><input type="email" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <th align="center">Password:</th>
+                <td><input type="password" id="password" name="password" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <th align="center">Re-enter Password:</th>
+                <td><input type="password" id="rePassword" name="rePassword" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <th align="center">Gender:</th>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male"> Male
+                    <hr>
+                    <input type="radio" id="female" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th align="center">Age:</th>
+                <td><input type="text" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <th align="center">Phone Number:</th>
+                <td><input type="text" id="phone" name="phone" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <th align="center">Address:</th>
+                <td rowspan="">
+                    <label for="address"></label>
+                    <textarea id="address" rows="5" cols="50"></textarea>
+                </td>
+            <tr>
+                <th align="center">State:</th>
+                <td ><input type="text" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <th align="center">Country:</th>
+                <td >
+                    <select id="country" name="country" style="width: 50%;">
+                        <option value="">Choose your country</option>
+                        <option value="India">India</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="center">Languages known:</th>
+                <td >
+                    <input type="checkbox" id="english" name="languages[]" value="English"> English
+                    <input type="checkbox" id="kannada" name="languages[]" value="Kannada" style="margin-left: 10px;"> Kannada
+                    <input type="checkbox" id="hindi" name="languages[]" value="Hindi" style="margin-left: 10px;"> Hindi
+                    <input type="checkbox" id="telugu" name="languages[]" value="Telugu" style="margin-left: 10px;"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="margin-left">
+                    <input type="checkbox" id="declaration" name="declaration" required> Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr><td colspan="2" align="right">log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a> website </td></tr>
+        </table>
+        <div style="text-align: center;">
+          <p></p><input type="submit" value="Register">
+        </div>
+    </form>
+<br><br>
+</div>
+</body>
+</html>
