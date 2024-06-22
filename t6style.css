@@ -24,8 +24,10 @@ h1 {
     text-align: center;
 }
 .pointer{
-    width: 5px;
     align-items: top-right;
+    position: absolute;
+    top: 40px; 
+    right: 180px;
     
 }
 .user-icon {
